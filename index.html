@@ -9,18 +9,45 @@
     body{
         font-family:'Times New Roman', Times, serif;}
         #container { text-align: center}
-        table { border-collapse: collapse; font-size: 2em; margin: 0 auto;}
+        table { border-collapse: collapse; font-size: 2em; margin: 0 auto; margin-top: 15px; margin-bottom: 15px;}
         colgroup, tbody {border: solid medium;}
-        td{ border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0;}
-        button { margin-top: 15px; font-size: 1.5em; }
-        .padd { padding-top:0px; color: blueviolet;}  
+        td{ border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 10;}
+        button { margin-top: 15px; font-size: 1.5em; background-color: black;color: white; font-style: italic; border-radius: 8px; transition-duration: 0.4s;}
+        button:hover{background-color: Grey; color:antiquewhite;}
+        .padd { padding-top:0px; color: rgb(111, 64, 155);}  
     </style>
 </head>
 
 <body>
+    <img src="sudoku.png" style = "padding-left:710px; height:180px ; width: 220px; text-align:center;">
     <div id = "container">
-        <img src="sudoku.png" style = "padding:10px; height:180px ; width: 220px; align-self:center;">
         
+        <table id = "sudoku-board">
+            <colgroup><col><col><col></colgroup>
+            <colgroup><col><col><col></colgroup>
+            <colgroup><col><col><col></colgroup>
+            <tbody>
+                <tr><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td></tr>
+                <tr><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td></tr>
+                <tr><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td></tr>
+            </tbody>
+            <tbody>
+                <tr><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td></tr>
+                <tr><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td></tr>
+                <tr><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td></tr>
+            </tbody>
+            <tbody>
+                <tr><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td></tr>
+                <tr><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td></tr>
+                <tr><td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td> <td contenteditable="true"></td></tr>
+            </tbody>
+        </table>
+        <div>
+            <button id = "solve-button">SOLVE!</button>
+        </div>
+        <div>
+            <button id = "clear-button">CLEAR BOARD</button>
+        </div>
     </div>
 </body>
 </html>
